@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*NAVEGACION HEADER*/
+
+.navbar {
+    padding-bottom: 0px;
+}
+
+.container-fluid {
+    background-color: rgb(53, 58, 64);
+
+    .navbar-brand {
+        color: white;
+
+    }
+}
+
+.navbar-brand img {
+    width: 50%;
+}
+
+#navbarNav .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    .nav-item {
+        padding-right: 20px;
+
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+
+    color: rgb(114, 111, 111);
+}
+
+.nav-link-verde {
+    color: rgb(5, 197, 5);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+
+/*CONFERENCIA*/
+
+.conferencia__museo {
+
+    background-image: linear-gradient(to right, #0d0d0dcb, #0c0c0c5e, #0b0b0ba2), url(../assets/img/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+
+.conferencia__museo__texto {
+    font-family: sans-serif;
+    font-size: small;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    padding-left: 60%;
+    padding-top: 25%;
+    padding-right: 10%;
+    line-height: 2;
+
+
+}
+
+.conferencia__museo__texto__botonOrador {
+
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(89, 167, 37, 0);
+    border: solid thin white;
+    text-align: center;
+    bottom: 60px;
+    right: 50px;
+
+}
+
+.tickets {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(89, 167, 37, 0.863);
+    text-align: center;
+    bottom: 60px;
+    right: 50px;
+
+}
+
+.verde {
+    line-height: 3;
+    border-bottom: white;
+    border-radius: 10px;
+
+}
+
+.blanco {
+    color: white;
+    text-decoration: none;
+}
+
+/*ORADORES*/
+
+
+.oradores {
+    padding-top: 20px;
+
+
+}
+
+#oradores {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.row {
+    padding: 100px;
+
+}
+
+/*TARJETAS*/
+
+
+.rojo {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    width: 15%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+.amarillo {
+    background-color: yellow;
+    border-radius: 5px;
+    width: 15%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+.gris {
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+    width: 15%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+.celeste {
+    background-color: rgb(6, 165, 218);
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*BS. AS. OCTUBRE*/
+
+.lugarFecha {
+    padding-top: 5px;
+    width: 100%;
+
+    .contenedorFlexible {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .lugarFecha__img {
+        width: 100%;
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .lugarFecha__texto {
+        background-color: rgb(71, 71, 71);
+        width: 100%;
+        height: 50vh;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+        font-family: sans-serif;
+        color: white;
+        padding-left: 25px;
+        padding-top: 25px;
+
+
+        .conferencia__museo__texto__botonOrador {
+            width: 200px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 0) and (max-width:991px) {}
+
+@media screen and (min-width:992px) {
+    .lugarFecha {
+        .contenedorFlexible {
+            flex-direction: row;
+
+            .lugarFecha__img {
+                width: 50%;
+                height: 60vh;
+            }
+
+            .lugarFecha__texto {
+                width: 50%;
+                height: 60vh;
+            }
+        }
+    }
+}
+
+/*FORMULARIO*/
+#formularioOrador {
+
+    font-family: sans-serif;
+    width: 450px;
+    margin: auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+#formularioOrador p {
+    font-size: small;
+    font-family: sans-serif;
+    width: 100%;
+
+
+}
+
+.formularioOrador__completar textarea {
+    width: 100%;
+    height: 100px;
+    margin: 8px 0;
+    display: block;
+
+
+}
+
+.formularioOrador__enviar {
+
+    background-color: rgb(11, 230, 11);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/*NAVEGACION FOOTER*/
+
+.footer nav{
+    height: 60px;
+    background-color: linear-gradient(to right, #04206dcb, #08307c5e, #054daca2);
+
+}
+
+.container-fluid {
+   
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.navbar-nav {
+    padding-left: 200px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-family: sans-serif;
+    color: rgb(201, 194, 194);
+    font-size: 1rem;
+    text-decoration: none;
+    
+    
+}
