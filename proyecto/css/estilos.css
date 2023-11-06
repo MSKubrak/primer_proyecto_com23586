@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 
 }
@@ -9,6 +9,7 @@
 
 .navbar {
     padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .container-fluid {
@@ -22,12 +23,13 @@
 
 .navbar-brand img {
     width: 50%;
+
 }
 
 #navbarNav .navbar-nav {
     display: flex;
     list-style: none;
-    margin: 0;
+    margin-bottom: 1px;
     padding: 0;
     align-items: center;
 
@@ -73,10 +75,11 @@
     text-decoration: none;
     text-align: right;
     color: white;
-    padding-left: 60%;
-    padding-top: 25%;
-    padding-right: 10%;
-    line-height: 2;
+    padding-left: 25%;
+    padding-top: 120px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    line-height: 1.5;
 
 
 }
@@ -85,7 +88,7 @@
 
     color: whitesmoke;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     background-color: rgba(89, 167, 37, 0);
     border: solid thin white;
@@ -98,12 +101,32 @@
 .tickets {
     color: white;
     text-decoration: none;
-    padding: 5px;
+    padding: 9px;
     border-radius: 5px;
     background-color: rgba(89, 167, 37, 0.863);
     text-align: center;
     bottom: 60px;
     right: 50px;
+
+}
+
+@media screen and (min-width: 0) and (max-width:991px) {
+
+    .tickets,
+    .conferencia__museo__texto__botonOrador {
+        padding: 9px;
+    }
+
+
+
+    @media screen and (min-width:992px) {
+
+        .tickets,
+        .conferencia__museo__texto__botonOrador {
+            padding: 5px;
+        }
+
+    }
 
 }
 
@@ -123,9 +146,8 @@
 
 
 .oradores {
-    padding-top: 20px;
-
-
+    padding-top: 50px;
+   
 }
 
 #oradores {
@@ -133,9 +155,37 @@
     font-family: sans-serif;
 }
 
-.row {
-    padding: 100px;
 
+.row {
+    padding-bottom: 1%;
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-right: 16%;
+}
+
+
+
+#entradas:hover,
+div h4 {
+    text-align: center;
+    font-family: sans-serif;
+    transform: scale(1);
+    filter: initial;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.ventaDeTickets__animate__animated animate__headShake {
+    animation-duration: 2s;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+
+.propia{
+    display: block;
 }
 
 /*TARJETAS*/
@@ -181,55 +231,106 @@
 }
 
 
+.border border-primary {
+
+    width: 15%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.border border-success {
+
+    width: 15%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+.border border-warning {
+    width: 15%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
 /*BS. AS. OCTUBRE*/
 
-.lugarFecha {
-    padding-top: 5px;
-    width: 100%;
+#lugarFecha {
 
-    .contenedorFlexible {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-style: groove;
+    text-align: left;
 
-    .lugarFecha__img {
-        width: 100%;
-        height: 50vh;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .lugarFecha__texto {
-        background-color: rgb(71, 71, 71);
-        width: 100%;
-        height: 50vh;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        line-height: 1.5;
-        font-family: sans-serif;
-        color: white;
-        padding-left: 25px;
-        padding-top: 25px;
-
-
-        .conferencia__museo__texto__botonOrador {
-            width: 200px;
-        }
-    }
 }
 
 
-@media screen and (min-width: 0) and (max-width:991px) {}
+.lugarFecha__texto {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(53, 58, 64);
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    height: 60vh;
+}
 
-@media screen and (min-width:992px) {
-    .lugarFecha {
-        .contenedorFlexible {
+.lugarFecha__img {
+    background-image: url(../assets/img/honolulu.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    height: 60vh;
+}
+
+.lugarFecha__boton {
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    width: 100px;
+    background-color: transparent;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+@media screen and (min-width: 0) and (max-width:991px) {
+    #lugarFecha {
+        flex-direction: column;
+
+        .lugarFecha__texto {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .lugarFecha__img {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+
+
+
+    @media screen and (min-width:992px) {
+        #lugarFecha {
             flex-direction: row;
 
             .lugarFecha__img {
@@ -251,10 +352,10 @@
     font-family: sans-serif;
     width: 450px;
     margin: auto;
-    padding: 20px 20px;
-    box-sizing: border-box;
+    padding: 25px 17px;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     line-height: 1.5;
 
@@ -272,7 +373,8 @@
     width: 100%;
     height: 100px;
     margin: 8px 0;
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
 
 
 }
@@ -284,27 +386,51 @@
     padding-right: 150px;
     padding-top: 5px;
     padding-bottom: 10px;
-
     border: none;
     text-align: center;
     font-weight: bold;
     color: white;
 }
 
-/*NAVEGACION FOOTER*/
 
-.footer nav{
-    height: 60px;
-    background-color: linear-gradient(to right, #04206dcb, #08307c5e, #054daca2);
+.ventaDeTickets h2 {
+    text-align: center;
 
 }
 
-.container-fluid {
-   
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+/*FORMULARIO DE TICKETS*/
 
+#btnBorrar #btnResumen {
+
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f8fafc;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: rgba(89, 167, 37, 0.863);
+    border: 1px solid transparent;
+
+}
+
+/*NAVEGACION FOOTER*/
+
+
+
+.container-fluidFooter {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(5, 5, 92, 1) 0%, rgba(54, 54, 130, 1) 35%, rgba(12, 90, 198, 1) 100%);
+    width: 100%;
 }
 
 .navbar-nav {
@@ -319,6 +445,6 @@
     color: rgb(201, 194, 194);
     font-size: 1rem;
     text-decoration: none;
-    
-    
+
+
 }
