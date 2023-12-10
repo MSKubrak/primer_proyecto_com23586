@@ -71,17 +71,15 @@
 
 .conferencia__museo__texto {
     font-family: sans-serif;
-    font-size: small;
     text-decoration: none;
     text-align: right;
     color: white;
-    padding-left: 25%;
+    padding-left: 30%;
     padding-top: 120px;
-    padding-right: 10px;
+    padding-right: 50px;
     padding-bottom: 50px;
     line-height: 1.5;
-
-
+    
 }
 
 .conferencia__museo__texto__botonOrador {
